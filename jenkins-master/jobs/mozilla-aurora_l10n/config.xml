@@ -31,10 +31,10 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
-           <name>DATE</name>
-           <description>The build date of Firefox. (Not used for l10n due to Bug 962011)</description>
-           <defaultValue></defaultValue>
-         </hudson.model.StringParameterDefinition>
+          <name>DATE</name>
+          <description>The build date of Firefox. (Not used for l10n due to Bug 962011)</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>ENV_PLATFORM</name>
           <description>Platform of the Mozmill environment.</description>
