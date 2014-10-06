@@ -207,13 +207,13 @@ class Automation:
             # stop processing it if listed there
             if 'locales' in target_branch['blacklist'] and \
                     data['locale'] in target_branch['blacklist']['locales']:
-                self.logger.info('Cancel processing of blacklisted "%s" locale' % data['locale'])
+                self.logger.info('Cancel processing of blacklisted locale: %s' % data['locale'])
                 return
 
         # Process the whitelist if one is present
         if 'locales' in target_branch and \
                 data['locale'] not in target_branch['locales']:
-            self.logger.info('Cancel processing of "%s" locale as it\'s not whitelisted' % data['locale'])
+            self.logger.info('Cancel processing of non-whitelisted locale: %s' % data['locale'])
             return
 
         for testrun in target_branch['testruns']:
